@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="720" viewBox="0 0 960 720" role="img" aria-labelledby="title desc">
+  <title id="title">会計事務所LP placeholder</title>
+  <desc id="desc">Replace this file with a screenshot image.</desc>
+  <rect width="960" height="720" fill="#eff6ff"/>
+  <rect x="96" y="86" width="768" height="548" rx="24" fill="#ffffff" stroke="#bfdbfe" stroke-width="4"/>
+  <rect x="144" y="132" width="300" height="28" rx="8" fill="#1d4ed8"/>
+  <rect x="144" y="190" width="470" height="22" rx="8" fill="#94a3b8"/>
+  <rect x="144" y="232" width="380" height="18" rx="8" fill="#cbd5e1"/>
+  <rect x="144" y="310" width="210" height="96" rx="16" fill="#dbeafe"/>
+  <rect x="384" y="310" width="210" height="96" rx="16" fill="#e0f2fe"/>
+  <rect x="624" y="310" width="144" height="96" rx="16" fill="#dbeafe"/>
+  <rect x="144" y="462" width="624" height="72" rx="16" fill="#f8fafc"/>
+  <text x="144" y="590" fill="#1e3a8a" font-family="Arial, sans-serif" font-size="34" font-weight="700">会計事務所LP</text>
+</svg>

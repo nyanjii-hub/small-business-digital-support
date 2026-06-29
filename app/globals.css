@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: #172033;
+  background: #ffffff;
+  font-family:
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Yu Gothic",
+    Meiryo,
+    sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+p,
+li,
+a {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 640px) {
+  h1,
+  h2,
+  h3,
+  p,
+  li,
+  a {
+    word-break: break-all;
+  }
+}
+
+@page {
+  size: A4;
+  margin: 10mm;
+}
+
+@media print {
+  html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    color: #111827;
+    background: #ffffff;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .print-hidden {
+    display: none !important;
+  }
+
+  .print-page {
+    max-width: none !important;
+    padding: 0 !important;
+  }
+
+  .print-compact {
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+  }
+
+  .print-card {
+    break-inside: avoid;
+    box-shadow: none !important;
+    border-color: #cbd5e1 !important;
+    padding: 8px !important;
+  }
+
+  .print-grid-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 6px !important;
+  }
+
+  .print-grid-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 6px !important;
+  }
+
+  .print-works-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+    gap: 6px !important;
+  }
+
+  .print-work-image {
+    height: 48px !important;
+    aspect-ratio: auto !important;
+  }
+
+  h1 {
+    font-size: 21px !important;
+    line-height: 1.25 !important;
+  }
+
+  h2 {
+    font-size: 13px !important;
+    margin-bottom: 5px !important;
+  }
+
+  h3,
+  p,
+  li,
+  a {
+    font-size: 9px !important;
+    line-height: 1.35 !important;
+  }
+
+  .print-page {
+    display: block !important;
+  }
+
+  .print-page * {
+    margin-top: 0.25rem !important;
+    margin-bottom: 0.25rem !important;
+  }
+
+  section {
+    break-inside: avoid;
+  }
+}

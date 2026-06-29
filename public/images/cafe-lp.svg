@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="720" viewBox="0 0 960 720" role="img" aria-labelledby="title desc">
+  <title id="title">古民家カフェLP placeholder</title>
+  <desc id="desc">Replace this file with a screenshot image.</desc>
+  <rect width="960" height="720" fill="#f8fafc"/>
+  <rect x="110" y="84" width="740" height="552" rx="28" fill="#ffffff" stroke="#bfdbfe" stroke-width="4"/>
+  <rect x="158" y="132" width="644" height="220" rx="20" fill="#dbeafe"/>
+  <circle cx="244" cy="244" r="68" fill="#93c5fd"/>
+  <rect x="356" y="188" width="318" height="22" rx="8" fill="#1d4ed8"/>
+  <rect x="356" y="232" width="248" height="18" rx="8" fill="#64748b"/>
+  <rect x="158" y="404" width="184" height="96" rx="16" fill="#eff6ff"/>
+  <rect x="388" y="404" width="184" height="96" rx="16" fill="#eff6ff"/>
+  <rect x="618" y="404" width="184" height="96" rx="16" fill="#eff6ff"/>
+  <text x="158" y="590" fill="#1e3a8a" font-family="Arial, sans-serif" font-size="34" font-weight="700">古民家カフェLP</text>
+</svg>
