@@ -1,6 +1,6 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 
-const CONTACT_EMAIL = "info@example.com";
+const CONTACT_FORM_URL = "https://forms.google.com/xxxxxxxx";
 
 const WORK_LINKS = {
   minicrm: "https://mini-crm-for-small-business-ads8.vercel.app/dashboard",
@@ -12,25 +12,25 @@ const WORK_LINKS = {
 
 const concerns = [
   "ホームページを見直したい",
-  "SNSやWeb販促を活用したい",
-  "Excel・Access管理が属人化している",
-  "顧客管理・問い合わせ管理を整理したい",
+  "SNSやWeb販促を始めたい",
+  "ExcelやAccess管理が属人化している",
+  "顧客管理を整理したい",
+  "問い合わせ管理を整理したい",
   "AIを使いたいが何から始めればよいか分からない",
-  "見積書・請求書・資料作成を効率化したい",
-  "担当者が辞めると業務が分からなくなる",
-  "ツールを入れても使いこなせるか不安"
+  "書類作成を効率化したい",
+  "担当者が辞めても困らない仕組みにしたい"
 ];
 
 const services = [
   {
     title: "ホームページ・LP制作",
     description:
-      "事業内容や強み、問い合わせまでの流れが伝わるページを制作します。公開後に更新しやすい形も相談できます。"
+      "事業内容や強み、問い合わせまでの流れが伝わるページを制作します。公開後の更新についても相談できます。"
   },
   {
-    title: "小規模業務改善ツール",
+    title: "小規模事業者向け業務改善ツール",
     description:
-      "Excel、Access、紙で分かれている情報を整理し、顧客管理や問い合わせ管理を扱いやすくします。"
+      "Excel、Access、紙で分かれている情報を整理し、顧客管理や問い合わせ管理を使いやすくします。"
   },
   {
     title: "AI活用支援",
@@ -38,9 +38,9 @@ const services = [
       "文章作成、資料作成、問い合わせ対応など、日々の仕事で使いやすいAIの始め方を一緒に整理します。"
   },
   {
-    title: "業務整理・導入相談",
+    title: "業務改善相談",
     description:
-      "今の業務を確認し、何から取り組むと効果が出やすいかを整理します。小さく試せる進め方を提案します。"
+      "今の業務を確認し、どこから改善するとよいかを整理します。小さく試せる進め方を提案します。"
   }
 ];
 
@@ -49,7 +49,7 @@ const works = [
     title: "MiniCRM",
     image: "/images/minicrm.png",
     href: WORK_LINKS.minicrm,
-    note: "Excel・紙管理から移行できる小規模事業者向けCRM"
+    note: "顧客・問い合わせ・請求・予約をまとめて管理できる小規模事業者向けCRM"
   },
   {
     title: "会計事務所LP",
@@ -80,23 +80,23 @@ const works = [
 const steps = [
   {
     title: "相談",
-    description: "現在のお困りごとを簡単に確認します。"
+    description: "現在のお困りごとを確認します。"
   },
   {
     title: "課題整理",
-    description: "何から取り組むべきか優先順位を整理します。"
+    description: "優先順位を整理します。"
   },
   {
     title: "デモ・改善案作成",
-    description: "必要に応じて画面イメージや改善案を用意します。"
+    description: "画面イメージや改善案を用意します。"
   },
   {
     title: "制作・導入",
-    description: "無理のない範囲で制作・導入します。"
+    description: "必要な部分だけ制作・導入します。"
   },
   {
     title: "運用サポート",
-    description: "使いながら改善できるように支援します。"
+    description: "使いながら改善できるよう支援します。"
   }
 ];
 
@@ -105,10 +105,6 @@ function isExternalLink(href: string) {
 }
 
 export default function Home() {
-  const mailtoHref = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(
-    "デジタル活用・業務改善支援の相談"
-  )}`;
-
   return (
     <main className="print-page mx-auto max-w-6xl overflow-x-hidden px-4 py-5 text-ink sm:px-6 lg:px-8">
       <section className="print-compact grid grid-cols-1 gap-8 border-b border-slate-200 py-10 md:grid-cols-[1.1fr_0.9fr] md:items-center">
@@ -122,20 +118,19 @@ export default function Home() {
             <span className="block">業務改善支援</span>
           </h1>
           <p className="mt-5 max-w-2xl text-base leading-8 text-slate-700 sm:text-lg">
-            Excelや紙でバラバラに管理している業務を整理しながら、ホームページ・LP制作、
-            業務改善ツール、AI活用支援まで、小さく始められる形でお手伝いします。
-            まずは今の困りごとを一緒に確認し、無理なく続けられる改善につなげます。
+            Excelや紙管理で分かれた業務を整理しながら、ホームページ制作、業務改善、AI活用まで、
+            小さく始められる形で支援します。まずは今の困りごとを確認し、無理なく続けられる改善につなげます。
           </p>
           <div className="print-hidden mt-6 flex flex-wrap gap-3">
             <a
               href="#contact"
-              className="rounded-md bg-primary-700 px-5 py-3 text-sm font-semibold text-white shadow-soft transition hover:bg-primary-900"
+              className="rounded-md bg-primary-700 px-5 py-3 text-sm font-semibold text-white shadow-soft transition hover:bg-primary-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2"
             >
               相談について確認する
             </a>
             <a
               href="#works"
-              className="rounded-md border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-primary-600 hover:text-primary-700"
+              className="rounded-md border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-primary-600 hover:text-primary-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2"
             >
               制作実績を見る
             </a>
@@ -199,8 +194,8 @@ export default function Home() {
                 key={work.title}
                 href={work.href}
                 target={external ? "_blank" : undefined}
-                rel={external ? "noreferrer" : undefined}
-                className="print-card group flex h-full flex-col overflow-hidden rounded-md border border-slate-200 bg-white text-slate-900 no-underline shadow-soft transition hover:-translate-y-0.5 hover:border-primary-200 hover:shadow-lg"
+                rel={external ? "noopener noreferrer" : undefined}
+                className="print-card group flex h-full flex-col overflow-hidden rounded-md border border-slate-200 bg-white text-slate-900 no-underline shadow-soft transition hover:-translate-y-0.5 hover:border-primary-200 hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2"
               >
                 <div className="print-work-image relative aspect-[4/3] bg-slate-100 p-2">
                   <Image
@@ -249,19 +244,21 @@ export default function Home() {
           まずは小さな相談から可能です。事業者の状況や困りごとを伺い、ホームページ、
           業務改善、AI活用のどこから始めるとよいかを一緒に整理します。
         </p>
-        <div className="print-hidden mt-5 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+        <div className="print-hidden mt-5 flex flex-col items-start gap-3">
           <a
-            href={mailtoHref}
-            className="rounded-md bg-primary-700 px-5 py-3 text-center text-sm font-semibold text-white transition hover:bg-primary-900"
+            href={CONTACT_FORM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="無料相談フォームを新しいタブで開く"
+            className="inline-flex items-center justify-center rounded-md bg-primary-700 px-5 py-3 text-center text-sm font-semibold text-white transition hover:bg-primary-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2"
           >
-            メールで相談する
+            <span>無料相談フォーム</span>
+            <span aria-hidden="true" className="ml-2 text-xs leading-none">↗</span>
           </a>
-          <a
-            href="#concerns"
-            className="rounded-md border border-primary-200 bg-white px-5 py-3 text-center text-sm font-semibold text-primary-700 transition hover:border-primary-600"
-          >
-            まずは相談内容を整理する
-          </a>
+          <p className="max-w-2xl text-xs leading-6 text-slate-600 sm:text-sm">
+            ご相談内容がまだまとまっていなくても大丈夫です。
+            「何から始めればいいか分からない」という段階でもお気軽にご相談ください。
+          </p>
         </div>
       </section>
     </main>
