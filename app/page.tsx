@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const CONTACT_FORM_URL = "https://forms.google.com/xxxxxxxx";
+const CONTACT_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLScpWDnn3GrstHW26EDTSOsmnmiqMWR-mwvv2MZKskxiwrcvIQ/viewform";
 
 const WORK_LINKS = {
   minicrm: "https://mini-crm-for-small-business-ads8.vercel.app/dashboard",
