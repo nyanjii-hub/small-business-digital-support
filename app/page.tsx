@@ -35,27 +35,27 @@ const services = [
 const works = [
   {
     title: "会計事務所LP",
-    image: "/images/accounting-lp.svg",
+    image: "/images/accounting-lp.png",
     note: "専門性と相談しやすさを伝える構成"
   },
   {
     title: "古民家カフェLP",
-    image: "/images/cafe-lp.svg",
+    image: "/images/cafe-lp.png",
     note: "雰囲気、メニュー、来店導線を整理"
   },
   {
     title: "AIスクールLP",
-    image: "/images/ai-school-lp.svg",
+    image: "/images/ai-school-lp.png",
     note: "講座内容と申込導線を明確化"
   },
   {
     title: "整体院LP",
-    image: "/images/bodywork-lp.svg",
+    image: "/images/bodywork-lp.png",
     note: "症状別の訴求と予約導線を配置"
   },
   {
     title: "MiniCRM",
-    image: "/images/minicrm.svg",
+    image: "/images/minicrm.png",
     note: "顧客・対応履歴を小さく管理"
   }
 ];
@@ -161,7 +161,7 @@ export default function Home() {
                   src={work.image}
                   alt={`${work.title}のスクリーンショット`}
                   fill
-                  className="object-cover"
+                  className="object-contain"
                   sizes="(min-width: 1024px) 20vw, (min-width: 640px) 50vw, 100vw"
                 />
               </div>
