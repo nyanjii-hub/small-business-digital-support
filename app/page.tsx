@@ -44,6 +44,62 @@ const services = [
   }
 ];
 
+const improvementExamples = [
+  {
+    title: "ホームページが古く、問い合わせにつながっていない",
+    issues: [
+      "スマートフォンで見づらい",
+      "情報が古いままになっている",
+      "問い合わせや予約への導線が分かりにくい"
+    ],
+    proposals: [
+      "ホームページの見直し",
+      "スマートフォン対応",
+      "問い合わせ導線の改善"
+    ],
+    effects: [
+      "事業内容が伝わりやすくなる",
+      "問い合わせしやすくなる",
+      "信頼感の向上につながる"
+    ]
+  },
+  {
+    title: "顧客情報や問い合わせ対応が人に依存している",
+    issues: [
+      "顧客情報が紙やExcelに分散している",
+      "誰がどこまで対応したか分かりにくい",
+      "問い合わせ漏れや対応漏れが起きやすい"
+    ],
+    proposals: [
+      "顧客情報・問い合わせ内容を管理できるシンプルな業務管理ツールの作成",
+      "対応状況を見える化",
+      "必要な情報を一か所にまとめる"
+    ],
+    effects: [
+      "対応漏れの防止",
+      "情報共有のしやすさ向上",
+      "業務の属人化を減らせる"
+    ]
+  },
+  {
+    title: "AIを使ってみたいが、何から始めればよいか分からない",
+    issues: [
+      "AIに興味はあるが、使いどころが分からない",
+      "難しそうで手を出しにくい",
+      "日々の業務にどう活かせるか分からない"
+    ],
+    proposals: [
+      "現在の業務内容をヒアリング",
+      "文章作成、問い合わせ対応、資料作成など小さな業務から活用方法を整理",
+      "無理なく始められる使い方を提案"
+    ],
+    effects: [
+      "作業時間の短縮",
+      "定型業務の負担軽減",
+      "AI活用の第一歩を作れる"
+    ]
+  }
+];
 const works = [
   {
     title: "MiniCRM",
@@ -183,6 +239,50 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="print-compact border-t border-slate-200 py-8">
+        <div className="mb-5 max-w-3xl">
+          <h2 className="text-2xl font-bold text-slate-950">ご相談・改善イメージ</h2>
+          <p className="mt-2 text-sm leading-7 text-slate-700">
+            実際の支援実績ではなく、よくあるご相談をもとにした想定される改善例です。相談後にどのような整理や改善につながるかをイメージしやすいようにまとめています。
+          </p>
+        </div>
+        <div className="print-grid-3 grid grid-cols-1 gap-4 lg:grid-cols-3">
+          {improvementExamples.map((example) => (
+            <article
+              key={example.title}
+              className="print-card rounded-md border border-slate-200 bg-white p-5 shadow-soft"
+            >
+              <h3 className="text-base font-bold leading-6 text-primary-900">{example.title}</h3>
+              <div className="mt-4 space-y-4 text-sm leading-6 text-slate-700">
+                <div>
+                  <p className="font-semibold text-slate-950">課題</p>
+                  <ul className="mt-2 list-disc space-y-1 pl-5">
+                    {example.issues.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <p className="font-semibold text-slate-950">ご提案</p>
+                  <ul className="mt-2 list-disc space-y-1 pl-5">
+                    {example.proposals.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <p className="font-semibold text-slate-950">期待できる効果</p>
+                  <ul className="mt-2 list-disc space-y-1 pl-5">
+                    {example.effects.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
       <section id="works" className="print-compact border-t border-slate-200 py-8">
         <h2 className="mb-4 text-2xl font-bold text-slate-950">制作実績</h2>
         <div className="print-works-grid grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-5">
